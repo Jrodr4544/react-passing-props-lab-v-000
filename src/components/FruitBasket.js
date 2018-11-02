@@ -11,7 +11,7 @@ const FruitBasket = ({updateFilterCallback, filters, currentFilter, fruit}) => {
 		<Filter handleChange={updateFilterCallback} filters={filters}/>
 		<FilteredFruitList
 		  filter={currentFilter} 
-		  items={fruit}
+		  fruit={fruit}
 		/>
 	      </div>
 	)
