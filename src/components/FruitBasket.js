@@ -17,4 +17,11 @@ const FruitBasket = (props) => {
 	)
 }
 
+FruitBasket.defaultProps = {
+    fruit: "",
+    filters: [],
+    currentFilter: "",
+    updateFilterCallback: ""
+}
+
 export default FruitBasket;

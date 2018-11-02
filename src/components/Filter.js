@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const Filter = (props) => { 
     const {handleChange, filters} = props
@@ -11,6 +11,11 @@ const Filter = (props) => {
         )}
       </select>
     )
-  }
+}
+
+Filter.defaultProps = {
+    filters: [],
+    handleChange: ""
+}
 
 export default Filter;
